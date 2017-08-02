@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import BookList from '../containers/BookList'
+import BookDetail from '../containers/BookDetail'
 import '../styles/App.css'
 
 class App extends Component {
   render () {
     return (
-      <div className='App'>
-        Hello World
+      <div className='row'>
+        <h1>Books N' Roses: Appetite for Instruction</h1>
+        <BookList />
+        <BookDetail />
       </div>
     )
   }
